@@ -39,6 +39,15 @@ function fillInfo(subjectID) {
                 metadataField.append("p").text(key[0] + ": " + key[1] + "\n");
             }
         });
+
+        Object.entries(subjectData).forEach((key) => { 
+            if (key[1] == null){ 
+                metadataField.append("v").text(key[0] + ": No data" + "\n"); 
+            }
+            else{
+                metadataField.append("v").text(key[0] + ": " + key[1] + "\n");
+            }
+        });
     });
 };
 
