@@ -70,6 +70,14 @@ function makeBarBubblePlots(subjectID){
             orientation: "h"
         };
 
+        var trace2 = { 
+            x: otuValuesTop10,
+            y: otuIDsTop10,
+            text: otuLabelsTop10,
+            type: "bar",
+            orientation: "h"
+        };
+
         var data1 = [trace1]; 
 
         var layout1 = {
